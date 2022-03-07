@@ -16,9 +16,11 @@ p, li {
     font-size: 14px;
 }
 
+
 /* Barra de navegação */
 header, .navbar {
     background-color: rgb(7, 11, 74);
+    
 }
 
 #nav-container {
@@ -437,5 +439,207 @@ padding: 40px 100px;
 #copy-area .container a:hover {
     text-decoration: none;
     color: rgb(7, 11, 74);
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: auto;
+}
+
+/* responsivo */
+
+@media(max-width: 768px) {
+
+    /* geral */
+    
+    .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 20px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /* about */
+
+    #about-area img {
+        margin-top: 100px;
+    }
+
+    /* data */
+
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 16px;
+    }
+
+    /* team */
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    /* apply */
+
+    #apply-area .apply-box {
+    padding: 10px 15px;
+    }
+
+    #portfolio-area .filter-btn {
+        margin-top: 15px;
+    }
+
+    /* news */
+
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email-input {
+        width: 70%;
+    }
+
+
+    /* não está sendo utilizado este call area */
+    #call-area {
+        margin-top: 00px;
+    } 
+    /* Não está sendo utilizado este call area */
+
+    #call-area .container {
+        padding: 20px;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 16px;
+    }
+
+}
+
+
+@media(max-width: 425px) {
+
+    /* slider */
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* data */
+
+    .circle-box {
+        width: 50%;
+    }
+
+    /* team */
+
+    #team-area .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* apply */
+
+    #apply-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+    /* filter */
+
+    #portfolio-area .filter-btn {
+        margin-bottom:20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
+
+    /* news */
+
+    #news-area .main-title {
+        font-size: 24px;
+    }
+
+    #news-area p {
+        font-size: 16px;
+    }
+
+    #email-input {
+        width: 80%;
+    }
+
+    /* cta */
+
+    #call-area p, #call-area #call-btn {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    /* contact */
+
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+    }
+
+
+
 }
 
